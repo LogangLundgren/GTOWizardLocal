@@ -1,0 +1,16 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poker-gto"
+version = "0.0.1"
+description = "Minimal CFR/CFR+ toy solver (Kuhn to start) with CLI scaffold"
+readme = "README.md"
+authors = [{name="Logan Lundgren"}]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+
+[project.scripts]
+poker-gto = "pokersolver.cli.main:main"
